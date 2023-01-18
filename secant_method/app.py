@@ -2,13 +2,7 @@ from math import pow
 def f(x): return pow(x, 3) - 2 * x - 5
 
 def main():
-    x0: float = 0
-    x1: float = 0
-    x2: float = 0
-    f0: float = 0
-    f1: float = 0
-    f2: float = 0
-    e: float = 0
+    x0, x1, x2, f0, f1, f2, e = (0.0, ) * 7
     step: int = 1
     N: int = 0
     
