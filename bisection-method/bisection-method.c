@@ -6,17 +6,16 @@
 int main() {
     int n = 1;
     float x_0, x_1, x_c, fa, fb, fc, e;
-    printf("What are the initial guesses? ");
+    printf("What are the initial guesses?(Xo, Yo) ");
     scanf("%f %f", &x_0, &x_1);
 
     printf("\nWhat is the tolerable error? ");
-    scanf("%f", e);
+    scanf("%f", &e);
 
-    printf("Hello World");
     fa = f(x_0);
     fb = f(x_1);
     if (fa * fb < 0) {
-        printf("\nStep\t\tXa\t\tXb\t\tF(a)\t\tF(b)\t\tXc\t\tF(c)\n");
+        printf("\nStep\tXa\t\tXb\t\tF(a)\t\tF(b)\t\tXc\t\tF(c)\n");
         do {
             x_c = (x_0 + x_1) / 2;
             fc = f(x_c);
